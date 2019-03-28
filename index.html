@@ -105,7 +105,7 @@
 		var nof=document.getElementById('nof');
 		var username = document.getElementById('username');
 		var password = document.getElementById('password');
-		var login = document.getElementById('login').innerText;
+		var login = document.getElementById('login');
 		function check(){
 			if(username.value == ''){
 				username.classList.add('empty');
@@ -114,10 +114,10 @@
 				password.classList.add('empty')
 			}else password.classList.remove('empty');
 			if(username.value != '' && password.value!=''){
-				login = 'Đang xử lí...';
+				login.innerText = 'Đang xử lí...';
 				setTimeout(function(){
 					nof.style.display = 'block';
-					login = 'Đăng nhập'
+					login.innerText = 'Đăng nhập'
 				},2000);
 			}
 		}
