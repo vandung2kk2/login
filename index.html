@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng nhập | Văn Dũng</title>
+	<meta charset='utf-8'>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<style>
+		body{
+			margin:0;
+			padding:0;
+			font-family:'Quicksand';
+			font-size:19px;
+			color:#444;
+			font-weight:500;
+			display:grid;
+			grid-template-rows:100%;
+			justify-items:center;
+		}
+		#loginBox{
+			position:relative;
+			top:calc(50vh - 60%);
+			padding:30px;
+			border-radius:6px;
+			box-shadow:3px 3px 15px rgba(0,0,0,.2);
+		}
+		input{
+			width:calc(100% - 20px);
+			outline:0;
+			border-radius:3px;
+			padding:10px;
+			font-size:17px;
+			width:450px;
+		}
+		.input{
+			border:solid 2px #ddd;
+		}
+		.empty{
+			border-color:#f66;
+		}
+		input:focus{
+			border:solid 2px #26bee2;
+		}
+		#buttons{
+			display:grid;
+			justify-items:center;
+		}
+		#login{			
+			border-radius:3px;
+			background:#26bee2;
+			color:#fff;
+			padding:15px 20px;
+			cursor:pointer;
+			margin-top:10px;
+			user-select: none;
+		}
+		#login:hover{
+			background:#26bee2dd;
+		}
+		h3{
+			font-weight:500;
+			color:#26bee2;
+		}
+		a{
+			color:#26bee2;
+			font-size:17px;
+			padding:3px;
+		}
+		#register{
+			float:right;
+		}
+		#nof{
+			background:#ff000089;
+			padding:15px 10px;
+			border-radius:4px;
+			color:#fff;
+			font-size:18px;
+			font-weight:400;
+			display:none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id='loginBox'>
+		<h3>Đăng nhập</h3>
+		<div>
+			<p>Tên đăng nhập</p>
+			<input type='text' id='username' class='input'>
+			<p>Mật khẩu</p>
+			<input type='password' id='password' class='input'>
+		</div>
+		<div style='margin:10px 0'>
+			<a href='#' id='forgot'>Quên mật khẩu</a>
+			<a href='#' id='register'>Tạo tài khoản</a>
+			<div style='clear:both'></div>
+		</div>
+		<div id='nof'>
+			Sai tên đăng nhập hoặc mật khẩu
+		</div>
+		<div id='buttons'>
+			<div id='login' onclick='check()'>Đăng nhập</div>
+		</div>
+	</div>
+	<script>
+		var nof=document.getElementById('nof');
+		var username = document.getElementById('username');
+		var password = document.getElementById('password');
+		var login = document.getElementById('login').innerText;
+		function check(){
+			if(username.value == ''){
+				username.classList.add('empty');
+			}else username.classList.remove('empty');
+			if(password.value == ''){
+				password.classList.add('empty')
+			}else password.classList.remove('empty');
+			if(username.value != '' && password.value!=''){
+				login = 'Đang xử lí...';
+				setTimeout(function(){
+					nof.style.display = 'block';
+					login = 'Đăng nhập'
+				},2000);
+			}
+		}
+	</script>
+</body>
