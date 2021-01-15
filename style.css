@@ -58,6 +58,9 @@
 	transition:0.15s;
 	color:inherit;
 }
+.inp:focus + .placeholder{
+	color:#0099ff;
+}
 #forget-password{
 	padding-left:1px;
 	font-size:0.95em;
