@@ -28,7 +28,7 @@
 	flex-direction: column
 }
 #username-label{
-	margin:5px 0 12px;
+	margin:8px 0 16px;
 }
 
 .inp{
@@ -64,7 +64,7 @@
 #forget-password{
 	padding-left:1px;
 	font-size:0.95em;
-	margin:10px 0 20px;
+	margin:14px 0 20px;
 	color:#0099ff;
 }
 
