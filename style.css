@@ -41,16 +41,16 @@ body{
 }
 .inp:focus{
 	padding:7px 9px;
-	border:solid 2px #2870B3cc;
+	border:solid 2px #0099ff;
 	border-radius:4px;
 }
 .placeholder{
 	position: absolute;
 	left:7px;
 	top:8px;
-	background:#f1f6fb;
+	background:#fff;
 	padding:0px 4px;
-	color:#888;
+	color:#aaa;
 }
 .inp:focus + .placeholder, .activeInp{
 	transform:translateY(-17px);
@@ -126,10 +126,11 @@ body{
 		background:#f1f6fb;
 	}
 	.inp:focus{
-		border:solid 2px #0099ff;
+		border:solid 2px #2870B3cc;
 	}
 	.placeholder{
-		color:#aaa;
+		background:#f1f6fb;
+		color:#888;
 	}
 	.inp:focus + .placeholder{
 		color:#0099ff;
