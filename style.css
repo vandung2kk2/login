@@ -76,7 +76,10 @@ body{
 	outline:none;
 	border:0;
 	border-radius:4px;
-	background:linear-gradient(135deg, #53aff5, #179aff);
+	background:linear-gradient(135deg, #59afff, #1381e8);
+	/*
+	59afff, 1381e8
+	*/
 	color:#fafafa;
 	padding:9px;
 	cursor:pointer;
@@ -101,7 +104,7 @@ body{
 	text-decoration:none;
 }
 #new-acc{
-	background:linear-gradient(135deg, #efefef, #ebebeb);
+	background:linear-gradient(135deg, #efefef, #dfdfdf);
 	color:#0099ff;
 }
 
@@ -139,6 +142,6 @@ body{
 		height:100px;
 	}
 	#login-btn{
-		background:linear-gradient(135deg, #51c9fc, #58bbfc);
+		background:linear-gradient(135deg, #307dfddd, #2870B3);
 	}
 }
