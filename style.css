@@ -76,7 +76,7 @@ body{
 	outline:none;
 	border:0;
 	border-radius:4px;
-	background:linear-gradient(135deg, #00aaff, #0088ff);
+	background:linear-gradient(135deg, #51c9fc, #58bbfc);
 	color:#fafafa;
 	padding:9px;
 	cursor:pointer;
@@ -101,7 +101,7 @@ body{
 	text-decoration:none;
 }
 #new-acc{
-	background:linear-gradient(135deg, #dfdfdf, #dbdbdb);
+	background:linear-gradient(135deg, #efefef, #ebebeb);
 	color:#0099ff;
 }
 
