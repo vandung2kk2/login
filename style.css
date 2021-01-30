@@ -76,9 +76,9 @@ body{
 	outline:none;
 	border:0;
 	border-radius:4px;
-	background:linear-gradient(135deg, #59afff, #1381e8);
+	background:linear-gradient(135deg, #59afff, #148cfc);
 	/*
-	59afff, 1381e8
+	59afff, 148cfc
 	*/
 	color:#fafafa;
 	padding:9px;
@@ -104,8 +104,8 @@ body{
 	text-decoration:none;
 }
 #new-acc{
-	background:linear-gradient(135deg, #efefef, #dfdfdf);
-	color:#0099ff;
+	background:linear-gradient(135deg, #efefef, #eaeaea);
+	color:#309bff;
 }
 
 @media all and (min-width:800px) and (max-height:1080px){
