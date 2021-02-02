@@ -21,6 +21,27 @@ body{
 	display: flex;
 	flex-direction: row;
 }
+#informer{
+	background:linear-gradient(120deg, #ff4444cc, #ff5555ee);
+	color:#fff;
+	border-radius: 4px;
+	padding:10px 11px;
+}
+.contain-slide{
+	animation:slide 0.2s forwards;
+	overflow:hidden;
+	height:0;
+	margin-bottom:10px;
+	display:none;
+}
+@keyframes slide{
+	100%{height:41px}
+}
+#form-header{
+	text-align:center;
+	font-size:1.5rem;
+	margin-bottom:10px;
+}
 #body > div:not(#form){
 	flex-grow: 0;
 }
@@ -28,6 +49,17 @@ body{
 	padding: 1rem;
 	border-radius: 10px;
 	flex-grow:1;
+}
+@media all and (min-width:700px) and (min-height:400px){
+	#body > div:not(#form){
+		flex-grow: 1;
+	}
+	#form{
+		flex-basis:400px;
+		flex-grow:0;
+		border-radius:12px;
+		box-shadow:2px 2px 10px rgba(0,0,0,0.08);
+	}
 }
 label{
 	display: block;
@@ -48,7 +80,7 @@ label{
 }
 .placeholder{
 	position: absolute;
-	top:18px;
+	top:16px;
 	left:8px;
 	background: #fff;
 	padding: 0 3px;
@@ -58,7 +90,7 @@ label{
 }
 .inp:focus + .placeholder, .active + .placeholder{
 	color: #309bff;
-	font-size: 0.9em;
+	font-size: 0.82em;
 	transform: translateY(-18px);
 }
 .active + .placeholder{
@@ -67,7 +99,8 @@ label{
 .forget{
 	color:inherit;
 	text-decoration: none;
-	color: #309bff
+	color: #309bff;
+	float:left;
 }
 .forget:active{
 	text-decoration: underline;
@@ -84,7 +117,7 @@ label{
 }
 .btn{
 	border-radius: 4px;
-	padding: 10px 0 8px;
+	padding: 10px 0;
 	text-align: center;
 	margin: 10px 0;
 }
@@ -111,7 +144,6 @@ label{
 	height: 0.5rem;
 	margin: 0 8px;
 }
-	
 	
 	
 	
